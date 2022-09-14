@@ -5,14 +5,14 @@ function App(){
 
 
   const [age, setAge]= useState(0)
-  const [hrl,set]= useState(0)
+  const [heartratelimit,setHeartRateLimit]= useState(0)
   
 
   
   function calculate(){
     const uHrl=(220-age)* 0.85;
     const lHrl=(220-age)* 0.65;
-    setHrl(lHrl + "-" + uHrl)
+    setHeartRateLimit(lHrl + "-" + uHrl)
   }
   
   return(
@@ -26,8 +26,8 @@ function App(){
       </div>
       <br></br>
       <div>
-      <label>Heart Rate Limits</label> &nbsp;
-      <button>{hrl}</button>
+      <label>HeartRateLimit</label> &nbsp;
+      <button>{heartratelimit}</button>
       </div>
       <br></br>
       <div>
