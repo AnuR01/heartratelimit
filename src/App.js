@@ -7,7 +7,6 @@ function App(){
   const [age, setAge]= useState(0)
   const [heartratelimit,setHeartRateLimit]= useState(0)
   
-
   
   function calculate(){
     const uHrl=(220-age)* 0.85;
